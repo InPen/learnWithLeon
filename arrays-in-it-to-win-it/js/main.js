@@ -8,5 +8,5 @@ console.log(hpSeries);
 arrayLenght = movieArray.length
 console.log(arrayLenght);
 //Get the last element in that array and store it in a new variable. What if your array was really large and you didn't know the last index? Would your solution still work?
-let lastElement = movieArray[3]
+let lastElement = movieArray.length - 1//movieArray[3]
 console.log(lastElement);
