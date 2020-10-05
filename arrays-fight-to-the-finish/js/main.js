@@ -11,7 +11,7 @@ console.log(arrayOfNums.length);
  for(let i=0;i< arrayOfNums.length;i++){
 //ADD three to each number and replace the old number
   arrayOfNums[i] = arrayOfNums[i]+3
-  console.log(arrayOfNums);
+  console.log(arrayOfNums)
 }
 // arrayOfNums.forEach(function(item, index) {
 //   console.log((item + 3), index)
