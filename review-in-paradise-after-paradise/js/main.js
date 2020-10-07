@@ -1,1 +1,14 @@
-// Create a function that takes in an array. If the first number, is less than the last number, alert "Hi". If the first number is greater than the last number, alert "Bye". If they are equal, alert "We close in an hour".
+// Create a function that takes in an array.
+let array = [1,5,6,3,9,0]
+function arrayTaker(array){
+//If the first number, is less than the last number, alert "Hi".
+  if(array[0] < array.legth - 1){
+    console.log('Hewo')
+//If the first number is greater than the last number, alert "Bye".
+} else if(array[0] > array.legth - 1){
+    console.log('Bye Felicia')
+//If they are equal, alert "We close in an hour".
+} else if(array[0] === array.legth - 1){
+    console.log("We close in an hour")
+  }
+}
