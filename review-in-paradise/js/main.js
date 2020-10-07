@@ -25,20 +25,24 @@ cubeRoot(24)
 // *Conditionals*
 //Create a function that takes in a month.
 function seasonMonth(month){
+  month = month.toLowerCase()
 //If it is a summer month alert "YAY".
   if(month === 'June' || month ==='July' || month ==='August') {
     console.log('YAY!')
 //If another other month, alert "Booo"
-} else if (month === 'December' || month ==='January' || month ==='February') {
+} else {
     console.log('Booo, so cold!')
+  }
 }
-seasonMonth(January)
+seasonMonth("January")
 //*Loops*
 //Create a function that takes in a number.
 function takeNum(num){
 //Console log every number from 1 to that number while skipping multiples of 5.
-  for(let i=0; i <= num; i=i*5 ){
-    console.log(num)
+  for(let i=1; i <= num; i++ ){
+    if (i % 5 !=== 0){
+      console.log(i)
+    }
   }
 }
 takeNum(25)
