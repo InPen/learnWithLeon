@@ -1,6 +1,6 @@
 // *Variables*
 // Declare a variable, reassign it to your favorite food, and alert the value
-let faveFood
+let faveFood = 'kimchi'
 faveFood = 'pozole'
 console.log(`My favorite food is ${faveFood}`);
 //Declare a variable, assign it a string, alert the second character in the string
@@ -23,8 +23,22 @@ function cubeRoot(number){
 }
 cubeRoot(24)
 // *Conditionals*
-//Create a function that takes in a month. If it is a summer month alert "YAY". If another other month, alert "Booo"
-
-
+//Create a function that takes in a month.
+function seasonMonth(month){
+//If it is a summer month alert "YAY".
+  if(month === 'June' || month ==='July' || month ==='August') {
+    console.log('YAY!')
+//If another other month, alert "Booo"
+} else if (month === 'December' || month ==='January' || month ==='February') {
+    console.log('Booo, so cold!')
+}
+seasonMonth(January)
 //*Loops*
-//Create a function that takes in a number. Console log every number from 1 to that number while skipping multiples of 5.
+//Create a function that takes in a number.
+function takeNum(num){
+//Console log every number from 1 to that number while skipping multiples of 5.
+  for(let i=0; i <= num; i=i*5 ){
+    console.log(num)
+  }
+}
+takeNum(25)
