@@ -14,5 +14,7 @@ function StreetFighterConstructor(fighterName, fighterHairColor, fighterWeapon){
   }
 }
 
+StreetFighterConstructor.prototype.dodge = true
+
 const sailorMoon = new StreetFighterConstructor('Sailor Moon', 'Blonde', 'Moon Crystal')
 const stevenUniverse = new StreetFighterConstructor('Steven', 'Brown', 'Rose Quarts')
