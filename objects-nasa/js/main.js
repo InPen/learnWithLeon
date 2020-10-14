@@ -3,7 +3,8 @@
 document.querySelector('button').addEventListener('click', () => {
 //!!I'm declaring date here and assigning it the html input but is no working
   const date = document.querySelector('input').value
-  fetch("https://api.nasa.gov/planetary/apod?api_key=yuj47R6zXxhBHuABMScFfHPe6eIvuaStRMaelZX5")
+//needed to add & = in order to add date to url
+  fetch(`https://api.nasa.gov/planetary/apod?api_key=yuj47R6zXxhBHuABMScFfHPe6eIvuaStRMaelZX5&date=${date}`)
     .then(res => res.json()) //parse response as JSON
     .then(data => {
       console.log(data);
